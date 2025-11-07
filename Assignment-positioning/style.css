@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: hell;
+  font-weight: 700;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+@font-face {
+  font-family: hell;
+}
+.main {
+  height: 100%;
+  background: linear-gradient(rgb(236, 200, 200), rgb(158, 114, 121));
+  width: 100%;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.hero {
+  font-weight: 300;
+  margin-top: 5%;
+  font-size: 25vw;
+  flex-wrap: nowrap;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftbotm {
+  width: 200px;
+  margin-left: 20px;
+  position: absolute;
+  bottom: 28%;
+  height: 40px;
+}
+
+.leftbotm .other {
+  margin-top: 20px;
+}
+.bottom {
+  padding: 15px;
+
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  height: 200px;
+  object-fit: contain;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.first {
+  top: 50%;
+  left: 40%;
+  width: 200px;
+}
+.third {
+  top: 50%;
+  width: 300px;
+  right: 20%;
+}
+.second {
+  top: 60%;
+  right: 30%;
+  width: 250px;
+}
