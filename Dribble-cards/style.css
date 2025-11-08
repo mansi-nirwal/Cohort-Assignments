@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 200px;
+  overflow: hidden;
+  width: 220px;
+  position: relative;
+  border-radius: 10%;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.bottom {
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(transparent, rgb(70, 69, 69));
+  position: absolute;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all ease 0.8s;
+}
+.bottom i {
+  font-size: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 3px;
+}
+.bottom p {
+  color: white;
+  font-size: 20px;
+}
+
+.card:hover .bottom {
+  bottom: 0;
+}
