@@ -39,7 +39,7 @@ body {
 
   align-items: center;
   justify-content: space-evenly;
-  transition: all ease 0.8s;
+  transition: all ease 8s;
 }
 .bottom i {
   font-size: 20px;

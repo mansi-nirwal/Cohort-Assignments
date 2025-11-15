@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* 
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: wheat;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 180px 1fr ;
+    grid-template-areas: "header header" "aside section" "figure figure";
+}
+
+header{
+    grid-area: header;
+    background-color: pink;
+}
+section{
+    grid-area: section;
+    background-color: green;
+}
+aside{
+    grid-area: aside;
+    background-color: purple;
+}
+figure{
+    grid-area: figure;
+    background-color: blue;
+} */
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: wheat;
+  display: grid;
+  grid-gap: 20px;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 70px 1fr 0.5fr 0.5fr;
+  grid-template-areas:
+    "header header header"
+    "section section section"
+    "leftdiv top right"
+    "leftdiv bottom right";
+}
+
+header {
+  background-color: green;
+  grid-area: header;
+}
+section {
+  grid-area: section;
+  background-color: purple;
+}
+
+.leftdiv {
+  grid-area: leftdiv;
+  background-color: rgb(230, 230, 31);
+}
+.right {
+  grid-area: right;
+  background-color: rgb(134, 50, 64);
+}
+.bottom {
+  grid-area: bottom;
+  background-color: rgb(22, 90, 150);
+}
+.top {
+  grid-area: top;
+  background-color: rgb(56, 179, 138);
+}
