@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+ background-color: rgb(180, 247, 247);
+  width: 100%;
+}
+.parent {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 20px;
+}
+.parent::-webkit-scrollbar {
+  display: none;
+}
+.child {
+  display: flex;
+  overflow: auto;
+}
+img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
+p{
+    font-weight: 200;
+    font-size: 20px;
+    color: rgb(58, 10, 10);
+    line-height: 2;
+}
